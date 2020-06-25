@@ -9,7 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!").padding()
+        List {
+            Section(header: Text("Section 1")) {
+                Text("Hello")
+            }
+            Section(header: Text("Section 2")) {
+                Text("World")
+            }
+        }
     }
 }
 
